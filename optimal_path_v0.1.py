@@ -2,7 +2,11 @@ import geopy
 import geopy.distance
 import numpy as np
 
-locationPonitsNames=["aspu baramkeh","midan", "dummar", "marabaa","aspu tal",'Akubar']
+
+
+
+
+
 locationPonits = [
   (33.496037313077935, 36.28980510501954), 
     (33.491814210211864, 36.29821651286583),  
@@ -54,9 +58,6 @@ for i in range(4):
 visistedPoints.append(targetPoint)
 print(len(visistedPoints))
 print(visistedPoints)
-
-for index in range(len(visistedPoints)):
-      print(index, locationPonitsNames[visistedPoints.index(visistedPoints[index])])
 
 
 

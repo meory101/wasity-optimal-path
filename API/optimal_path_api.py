@@ -10,8 +10,6 @@ app = Flask(__name__)
 @app.route('/api/findOptimalPath', methods=['POST'])
 def findOptimalPath():
     
-
-    allLocationPoints = [tuple(item) for item in request.json]
     locationPonits = request.json.get('points')
     startPoint = request.json.get('startPoint')
     targetPoint = request.json.get('targetPoint')
@@ -30,7 +28,7 @@ def findOptimalPath():
     # leftedPoinsts.remove(startPoint)
     # leftedPoinsts.remove(targetPoint)
  
-    costList =array_5x5 = [[1000000 for _ in range(5)] for _ in range(5)]
+    costList  = [[1000000 for _ in range(5)] for _ in range(5)]
     visistedPoints =[startPoint]
     allPathCost =0
     completedPoints = False
